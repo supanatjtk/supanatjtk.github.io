@@ -1,0 +1,30 @@
+
+<html>
+    <body> 
+
+      <h5>เลขคู่หรือเลขคี่</h5>
+
+        <input id="evenoddinput">
+<input type="button" value="check" OnClick="check();">
+
+<div id="result"></div>
+
+    </body>
+
+</html>
+<script>
+function check() {
+    var v = document.getElementById('evenoddinput').value;
+    
+    var result;
+    if (v % 2 == 0) {
+      result = "เลขคู่";
+    } else {
+      result = "เลขคี่";
+    }
+    
+    document.getElementById("result").innerHTML = result;
+    
+  }
+
+  </script>

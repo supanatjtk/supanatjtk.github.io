@@ -1,0 +1,63 @@
+
+<html>
+    <body> 
+
+      <h5>เกมทายตัวเลข</h5>
+      <h5>Guess Number</h5>
+
+      <input type="button" value="New Game">
+      <br>
+
+      <h5>ให้ทายตัวเลข 0-99</h5>
+        <input id="evenoddinput">
+<input type="button" value="check" OnClick="check();">
+
+
+<div id="result"></div>
+
+    </body>
+
+</html>
+
+
+
+
+<script>
+
+var min = 0
+var max = 99
+var answer =  Math.floor(Math.random() * (max - min + 1)) + min;
+
+
+function check() {
+    var v = document.getElementById('evenoddinput').value;
+    
+
+
+    //var answer = 77;
+
+    var result = answer;
+    if (v  == answer) {
+      result = "ถูกต้อง";
+    }else if (v>answer){
+      result = "คำตอบของคุณมากไป";
+    }else{
+      result = "คำตอบของคุณน้อยไป";
+    }
+
+    /*
+    if (v  == answer) {
+      result = "ถูกต้อง";
+    } else if(v  > answer) {
+      result = "คำตอบของคุณมากไป";
+    }
+    else if(v  > answer) {
+      result = "คำตอบของคุณน้อยไป";
+    }
+    */
+    
+    document.getElementById("result").innerHTML = result;
+    
+  }
+
+</script>
