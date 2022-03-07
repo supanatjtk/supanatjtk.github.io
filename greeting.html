@@ -1,0 +1,44 @@
+
+<html>
+    <body> 
+
+
+      <br>
+
+        <input id="evenoddinput">
+<input type="button" value="submit" OnClick="check();">
+
+
+<div id="result"></div>
+
+    </body>
+
+</html>
+
+
+
+
+<script>
+
+
+function check() {
+    var v = document.getElementById('evenoddinput').value;
+    
+
+
+    //var answer = 77;
+
+
+    if (v  > 18) {
+      result = "Good evening.";
+    }else{
+      result = "Good day.";
+    }
+
+      
+    
+    document.getElementById("result").innerHTML = result;
+    
+  }
+
+</script>
